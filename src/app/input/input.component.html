@@ -1,0 +1,10 @@
+<input type="text" [placeholder]="placeholder" [value]="value" (input)="onInputChange($event)" [class]="
+    'block w-full border focus:ring-0 transition-all rounded-lg shadow-sm ' +
+    getSizeClasses() + ' ' +
+    (disabled
+      ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
+      : 'bg-white text-gray-900 border-gray-300 focus:ring-black focus:border-black') +
+    ' w-full px-6 py-4 bg-white/20 rounded-xl text-white placeholder-white/70 ' +
+    (isInputFocused ? 'border-white/50 shadow-lg' : 'border-2 border-transparent') +
+    ' focus:outline-none focus:ring-0 focus:ring-white/50 transition-all duration-300'
+  ">
